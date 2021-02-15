@@ -1,13 +1,69 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+h1 {
+  margin: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 250%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h2 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: red;
+  display: none;
+}
+
+.square {
+  height: 50px;
+  width: 50px;
+  border: 1px solid grey;
+  margin-right: -1px;
+  margin-top: -1px;
+  background:white;
+  color:black;
+  font-size: 250%;
+  text-align: center;
+}
+
+.square:focus, #solvebutton:focus {
+  outline:none;
+}
+
+.row {
+ display: block;
+}
+
+#board {
+  margin: 20px;
+}
+
+#solvebutton {
+  font-weight: bold;
+  border: none;
+  background-color: gold;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 20px;
+}
+
+#solvebutton:hover, #clear:hover {
+  cursor: pointer;
+  color: green;
+}
+
+#clear {
+  font-weight: bold;
+  border: none;
+  background-color: red;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+
+#notsolvable {
+  display: none;
+}
+
+#all {
+  text-align: center;
 }
